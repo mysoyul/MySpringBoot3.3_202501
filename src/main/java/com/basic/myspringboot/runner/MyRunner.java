@@ -2,6 +2,8 @@ package com.basic.myspringboot.runner;
 
 import com.basic.myspringboot.config.CustomVO;
 import com.basic.myspringboot.property.MyBootProperties;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
@@ -27,8 +29,11 @@ public class MyRunner implements ApplicationRunner {
     @Autowired
     CustomVO customVO;
 
+    Logger logger = LoggerFactory.getLogger(MyRunner.class);
+
     @Override
     public void run(ApplicationArguments args) throws Exception {
+        System.out.println("Logger 구현객체명 = " + logger.getClass().getName());
         System.out.println("현재 활성된 CustomVO " + customVO);
         System.out.println("MyBootProperties getFullName = " +
                 properties.getFullName());
