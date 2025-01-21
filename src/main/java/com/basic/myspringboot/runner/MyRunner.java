@@ -33,20 +33,17 @@ public class MyRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        System.out.println("Logger 구현객체명 = " + logger.getClass().getName());
-        System.out.println("현재 활성된 CustomVO " + customVO);
-        System.out.println("MyBootProperties getFullName = " +
-                properties.getFullName());
+        logger.info("Logger 구현객체명 = {}", logger.getClass().getName());
+        logger.info("현재 활성된 CustomVO = {} ", customVO);
+        logger.info("MyBootProperties getFullName = {}", properties.getFullName());
 
-        System.out.println("@Value myboot.name = " + name);
-        System.out.println("@Value myboot.age = " + age);
-        System.out.println("Environment getProperty fullName = " +
-                environment.getProperty("myboot.fullName"));
-        System.out.println("Environment getProperty port 번호 = " +
-                environment.getProperty("local.server.port"));
+        logger.info("@Value myboot.name = {}", name);
+        logger.info("@Value myboot.age = {}", age);
+        logger.info("Environment getProperty fullName = {}", environment.getProperty("myboot.fullName"));
+        logger.info("Environment getProperty port 번호 = {}", environment.getProperty("local.server.port"));
 
-        System.out.println("VM Argument foo " + args.containsOption("foo"));
-        System.out.println("Program Argument bar "+ args.containsOption("bar"));
+        logger.debug("VM Argument foo = {}", args.containsOption("foo"));
+        logger.debug("Program Argument bar = {}", args.containsOption("bar"));
         //argument 목록 출력하기
         //forEach(Consumer) Consumer 의 추상메서드 void accept(T)
         //익명클래스
