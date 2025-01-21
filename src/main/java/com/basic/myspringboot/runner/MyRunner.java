@@ -26,7 +26,7 @@ public class MyRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         System.out.println("MyBootProperties getFullName = " +
-                properties.getFullName());
+                properties.getName());
 
         System.out.println("@Value myboot.name = " + name);
         System.out.println("@Value myboot.age = " + age);
