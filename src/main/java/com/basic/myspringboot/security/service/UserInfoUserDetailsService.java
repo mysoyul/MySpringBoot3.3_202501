@@ -22,6 +22,7 @@ public class UserInfoUserDetailsService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Optional<UserInfo> optionalUserInfo = repository.findByEmail(username);
+        //Entity 객체를 AuthenticationManager가 사용하는 UserDetails 객체로 변환하기
         return optionalUserInfo.map(userInfo -> new UserInfoUserDetails(userInfo))
                 //userInfo.map(UserInfoUserDetails::new)
                 .orElseThrow(() -> new UsernameNotFoundException("user not found " + username));
