@@ -2959,3 +2959,42 @@ Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-valid
 2025-01-22T11:19:04.278+09:00  INFO 18580 --- [MySpringBoot3_3] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-01-22T11:19:04.282+09:00  INFO 18580 --- [MySpringBoot3_3] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 2025-01-22T11:19:04.286+09:00  INFO 18580 --- [MySpringBoot3_3] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-01-22T11:19:08.277+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] c.b.m.MySpringBoot33Application          : Starting MySpringBoot33Application using Java 17 with PID 12840 (C:\springboot\code\MySpringBoot3.3_202501\target\classes started by KOSTA in C:\springboot\code\MySpringBoot3.3_202501)
+2025-01-22T11:19:08.283+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] c.b.m.MySpringBoot33Application          : The following 1 profile is active: "prod"
+2025-01-22T11:19:08.332+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-22T11:19:08.332+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-22T11:19:09.506+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-22T11:19:09.572+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
+2025-01-22T11:19:10.554+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-01-22T11:19:10.571+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-01-22T11:19:10.572+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-22T11:19:10.635+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-01-22T11:19:10.637+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2302 ms
+2025-01-22T11:19:11.033+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-22T11:19:11.099+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-01-22T11:19:11.142+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-01-22T11:19:11.473+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-22T11:19:11.507+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-01-22T11:19:11.588+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@4f0772a5
+2025-01-22T11:19:11.590+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-01-22T11:19:11.618+09:00  WARN 12840 --- [MySpringBoot3_3] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-22T11:19:12.401+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-22T11:19:12.441+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T11:19:12.568+09:00  WARN 12840 --- [MySpringBoot3_3] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-22T11:19:13.007+09:00  WARN 12840 --- [MySpringBoot3_3] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-01-22T11:19:13.593+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2025-01-22T11:19:13.672+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-22T11:19:13.681+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-01-22T11:19:13.775+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-01-22T11:19:13.795+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] c.b.m.MySpringBoot33Application          : Started MySpringBoot33Application in 6.009 seconds (process running for 7.091)
+2025-01-22T11:19:13.805+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] c.b.m.r.DatabaseRunner                   : DataSource 구현객체는 com.zaxxer.hikari.HikariDataSource 
+2025-01-22T11:19:13.806+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] c.b.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2025-01-22T11:19:13.807+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] c.b.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2025-01-22T11:19:13.807+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] c.b.m.r.DatabaseRunner                   : DB Username = boot
+2025-01-22T11:19:13.808+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] c.b.m.r.MyRunner                         : Logger 구현객체명 = org.apache.logging.slf4j.Log4jLogger
+2025-01-22T11:19:13.808+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] c.b.m.r.MyRunner                         : 현재 활성된 CustomVO = CustomVO(mode=운영 환경, rate=0.8) 
+2025-01-22T11:19:13.810+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] c.b.m.r.MyRunner                         : MyBootProperties getFullName = 스프링 Boot 운영환경
+2025-01-22T11:19:13.811+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] c.b.m.r.MyRunner                         : @Value myboot.name = 스프링
+2025-01-22T11:19:13.811+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] c.b.m.r.MyRunner                         : @Value myboot.age = 10
+2025-01-22T11:19:13.812+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] c.b.m.r.MyRunner                         : Environment getProperty fullName = 스프링 Boot 운영환경
+2025-01-22T11:19:13.812+09:00  INFO 12840 --- [MySpringBoot3_3] [restartedMain] c.b.m.r.MyRunner                         : Environment getProperty port 번호 = 8080
